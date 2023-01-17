@@ -1,0 +1,48 @@
+//number of characters
+
+    ALGORITHM nb-characters
+
+    VAR
+        str : STRING := "the best in the world.";
+        count : INTEGER : = 0;
+
+    BEGIN
+        FOR (int i=0; i < str.length(); i++) DO 
+            count++
+        END-FOR
+            Write(count);
+    END 
+
+
+//number of words in the sentence
+
+    ALGORITHM nb-words
+
+    VAR
+        str : STRING := "the best in the world.";
+        count : INTEGER : = 1;  
+
+    BEGIN
+        FOR i in str DO 
+        IF i == " " THEN 
+        count +=1
+        END-IF
+        END-FOR
+    END
+
+//number of vowels in the sentence
+
+    ALGORITHM nb-vowels
+
+    VAR 
+        vowels : STRING := "the best in the world.";
+        count : INTEGER : =0;
+
+    BEGIN
+        FOR CHAR in vowels DO 
+        IF char in : ['a', 'e', 'i' , 'o' , 'u' , 'y'] THEN
+        count += 1;
+        END_IF
+        END_FOR
+        write (count);
+    END
